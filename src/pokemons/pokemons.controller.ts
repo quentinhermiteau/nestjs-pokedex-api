@@ -12,6 +12,7 @@ export class PokemonsController {
 
   @Get()
   @ApiQuery({ name: 'page', type: Number, required: false })
+  @ApiQuery({ name: 'limit', type: Number, required: false })
   @ApiQuery({ name: 'typeId', type: Number, required: false })
   @ApiQuery({ name: 'name', type: String, required: false })
   @ApiResponse({
